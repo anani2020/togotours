@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Anani's Togo</title>
+	<title>African Animals</title>
 
 	<!-- frameworks: Bootstrap Stylesheet-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -52,73 +52,67 @@
 		<!--Main-->
 		<main>
 		
-		<h2>Welcome to Togo Tours!</h2>
-		
+		<h2>Visite des Animaux Africains</h2>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12">
-					<!-- "welcomehero" image holder -->
-					<div id="welcomehero"></div>
+					<!-- "animalshero" image holder -->
+					<div id="animalshero"></div>
 					<!-- Text-Block in CSS makes img background transparent -->
 						<div class="text-block">
-							<h6>Togo Tours</h6>
+							<h6>Les Tours de Togo</h6>
 							<h6>Kpalime</h6> 
 							<h6>Togo</h6> 
-							<h6>West Africa</h6>
+							<h6>Ouest Afrique</h6>
 						</div>
 				</div> <!-- end columns -->
 			</div> <!-- end row -->
 		</div> 
-		
-		
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-12">
-					
-				<p>				
-				I was born in the city of Kpalime in the south of the country of Togo, 
-				which is located in West Africa.
-				I worked as a tour guide in Kpalime and the capital city of Lome,
-				having been self-employed from the age of 10 years. 
-				I met people from all over the world, while taking them on 
-				personalized tours in my country.
-				<p>
-				I have a high school diploma from Lycee Zomayi, Kpalime, Togo.
-				I obtained a German language certificate from the 
-				Goethe Institute in Lome, Togo.
-				I am fluent in English, French, German, and 
-				my country's Mina language and the Ewe dialect.
-				I also attended the University of Togo Law School located in Lome, Togo.
-
 	
-				</div> <!-- end columns -->
-			</div> <!-- end row -->
-		</div> <!-- end container -->
-		
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-4">	
-					<img src="images/coffee-plantation250.jpg"
-						height="250" width="250" class="img-fluid logo"
-					    alt="Tour Plantations">
-					<h3>Plantations Tour</h3>
-				</div>
-				
-				<div class="col-sm-4">	
-					<img src="images/butterfly250.jpg"
-						height="250" width="250" class="img-fluid logo"
-					    alt="Tour Butterflies">
-					<h3>Butterflies Tour</h3>
-				</div>
-				
-				<div class="col-sm-4">
-					<img src="images/waterfall250.jpg"
-						height="250" width="250" class="img-fluid logo"
-					    alt="Tour Waterfalls">
-					<h3>Waterfalls Tour </h3>
-				</div>
-			</div> <!-- end row -->
-		</div> <!-- end container -->
+		<h5>
+		<!-- set up a gallery of photographs -->
+		<div class="gallery">
+			<div class="preview">
+				<img id="preview" src="images/1-zebras-hero510x340.jpg" style="display:block;margin:0 auto;" 
+				         alt="header image"  height="340" width="510"/>
+			</div>
+
+			<div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+				<img onclick="document.getElementById('preview').src=document.getElementById('img1').src;" id="img1" 
+				      src="images/1-antelope510x340.jpg" alt="Antelope" />
+					  Antelope
+				<img onclick="document.getElementById('preview').src=document.getElementById('img2').src;" id="img2" 
+				      src="images/1-cheetah510x340.jpg" alt="Cheetah"  />
+					  Cheetah
+				<img onclick="document.getElementById('preview').src=document.getElementById('img3').src;" id="img3" 
+				      src="images/1-crane510x340.jpg" alt="Crane" />
+					  Crane
+				<br>
+				<img onclick="document.getElementById('preview').src=document.getElementById('img4').src;" id="img4" 
+				      src="images/1-baby-elephant510x340.jpg" alt="Elephants" />
+					  Elephants
+				<img onclick="document.getElementById('preview').src=document.getElementById('img5').src;" id="img5" 
+				      src="images/1-flamingos510x340.jpg" alt="Flamingos" />
+					  Flamingos
+				<img onclick="document.getElementById('preview').src=document.getElementById('img6').src;" id="img6" 
+				      src="images/1-antelope510x340.jpg" alt="Antelope" />
+					  Antelope
+				<br>	  
+				<img onclick="document.getElementById('preview').src=document.getElementById('img7').src;" id="img7" 
+				      src="images/1-gazelle510x340.jpg" alt="Gazelle"  />
+					  Gazelle
+				<img onclick="document.getElementById('preview').src=document.getElementById('img8').src;" id="img8" 
+				      src="images/1-meerkat510x340.jpg" alt="Meerkat" />
+					  Meerkat
+				<img onclick="document.getElementById('preview').src=document.getElementById('img9').src;" id="img9" 
+				      src="images/1-ostriches510x340.jpg" alt="Ostriches" />
+					  Ostriches
+				<img onclick="document.getElementById('preview').src=document.getElementById('img10').src;" id="img10" 
+				      src="images/1-zebras510x340.jpg" alt="Zebra" />
+					  Zebra  
+			</div> <!-- end gallery thumbnails -->
+		</div> <!-- set up gallery of photographs  -->
+		</h5>
 		
 	
 		</main>
