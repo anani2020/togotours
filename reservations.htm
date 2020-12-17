@@ -40,7 +40,7 @@
       			<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
       			<li class="nav-item active"><a class="nav-link" href="tours.htm">Tours</a></li>
 				<li class="nav-item active"><a class="nav-link" href="reservations.htm">Reservations</a></li>
-  				<li class="nav-item active"><a class="nav-link" href="french.htm">French</a></li>
+  				<li class="nav-item active"><a class="nav-link" href="animals.htm">Animals</a></li>
       			<li class="nav-item"><a class="nav-link" 
 				        href="https://www.nationsonline.org/oneworld/togo.htm" 
 						target="_blank">Togo</a></li>      
@@ -53,9 +53,9 @@
 
 		<!--Main-->
 		<main>
-			
+		
 		<h2>Tour Reservations</h2>
-
+		
 		<h4>
 		
 		<div class="container-fluid">
@@ -93,14 +93,28 @@
 		<!-- display the result of the radio button and javascript -->
 		<div id="result"></div> 
 		</h3> 
-    
 		
-	<p>Required information is marked with an asterisk (*)</p>
+		<hr>
+		<hr>
+		
+ 		<hr>
+		<div class="container-fluid">
+			<div class="row"> <!-- begin row -->
+			<div class="col-sm-12">			
+				<img src="images/under-construction-website.jpg" height="170" width="340" alt="Under Construction Website" />
+			</div> <!-- end column  -->
+			</div> <!-- end row -->
+		</div> <!-- end container-fluid -->	
+		
+		
+		<h4>NOTE: The following form below is a placeholder and not currently live</h4>	
+		<!--<p>Required information is marked with an asterisk (*)</p>
 				
-	<!--form calls function validateForm() to check user enters an e-mail -->
-	<form method="post" onsubmit="return validateForm();"
+		form calls function validateForm() to check user enters an e-mail -->
+		<!--
+		<form method="post" onsubmit="return validateForm();"
 			action="https://webdevbasics.net/scripts/pacific.php">
-
+		-->
 		<div class="container-fluid">
 			<div class="row"> <!-- begin row -->
 			<div class="col-sm-2">
@@ -187,16 +201,19 @@
 			</div> <!-- end row -->
 		</div> <!-- end container-fluid -->	
 		
+		<!-- 
 		<div class="container-fluid">	
-			<div class="row"> <!-- begin row -->
+			<div class="row"> 
+			
 			<div class="col-sm-6">	
 			<input type="submit" value="Submit" id="mySubmit">
-			</div> <!-- end column  -->
-			</div> <!-- end row -->
-		</div> <!-- end container-fluid -->	
+			</div> 
+			</div> 
+		</div> 
+		-->	
 		
-	</form> <!--End form--> 
-				
+		</form> <!--End form--> 
+	
 	</main> <!--End main-->
 
 
@@ -204,7 +221,7 @@
 		
 	<!--Website Footer-->
 	<footer>
-		
+	
 		<!-- one row with 3 columns for images -->
 		<div class="div-footer">
 		<div class="container-fluid">
@@ -256,17 +273,19 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 	<!--script to validate e-mail-->
+	<!--
 	<script>
 		function validateForm() {
 			if (document.forms[0].email.value == "" ) {
 				alert("Please enter an e-mail address.");
 				return false;
-			} // end if
-			// else
+			} 
+			
 				return true;
 		} 
-		// end function validateForm
+		
 	</script>
+	-->
 	
 	<script> 
         function displayTourSelected() { 
@@ -274,12 +293,11 @@
               
             for(i = 0; i < ele.length; i++) { 
                 if(ele[i].checked) 
-                document.getElementById("result").innerHTML
-                        = "You have selected the " + ele[i].value + " tour"; 
+					document.getElementById("result").innerHTML
+                        = "You have selected the \"" + ele[i].value + "\" tour"; 
             } 
         } 
     </script> 
 		
 </body> 
 </html>
-
